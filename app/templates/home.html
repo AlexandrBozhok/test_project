@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title %} Pay {% endblock %}
+
+{% block head %}
+    {{ super() }}
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h1>Оплата онлайн</h1>
+        <form class="original-form" name="original-form">
+            {{ form.csrf_token }}
+            <div class="form-group">
+                <p>{{ form.amount.label }}</p>
+                {{ form.amount() }}
+            </div>
+            <div class="form-group">
+                <p>{{ form.currency.label }}</p>
+                {{ form.currency() }}
+            </div>
+            <div class="form-group">
+                <p>{{ form.description.label }}</p>
+                {{ form.description() }}
+            </div>
+            {{ form.submit() }}<br>
+        </form>
+    </div>
+{% endblock %}

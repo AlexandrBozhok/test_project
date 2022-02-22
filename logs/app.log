@@ -1,0 +1,4 @@
+2022-37-21 21:37:07 [INFO]: test
+2022-45-21 21:45:02 [INFO]: test
+2022-25-22 02:25:36 [ERROR]: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+2022-47-22 03:47:18 [ERROR]: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'

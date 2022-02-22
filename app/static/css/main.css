@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: #f0f0f0;
+    height: 97vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container h1 {
+    margin: 10px 0;
+}
+
+.original-form {
+    background: #fff;
+    padding: 20px 20px;
+    border-radius: 5px;
+    -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.form-group {
+    margin: 5px 0;
+}
+
+.form-group p {
+    font-size: 22px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 0 5px;
+}
+
+.form-group input {
+
+}
+
+.form-group textarea {
+    height: 4rem;
+    resize: none;
+}
+
+.original-form input[type="submit"] {
+    background: #EA9D29;
+    color: #fff;
+    width: 50%;
+    height: 40px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.original-form input[type="submit"]:hover {
+    background: #fcba58;
+    cursor: pointer;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}

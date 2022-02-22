@@ -1,0 +1,7 @@
+.idea
+__pycache__
+tests/.pytest_cache
+.git
+.env
+test.py
+app/database.sqlite
