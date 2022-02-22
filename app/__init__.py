@@ -3,7 +3,7 @@ from flask import Flask
 from enum import Enum
 
 from app.models import db
-from config import DevelopmentConfig
+from config import DevelopmentConfig, ProductionConfig
 
 
 class Currency(Enum):
@@ -39,7 +39,7 @@ def configure_logging(app):
     app.logger.addHandler(file_handler)
 
 
-app = create_app(DevelopmentConfig)
+app = create_app(ProductionConfig)
 
 
 from app import views, models, forms

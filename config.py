@@ -1,3 +1,4 @@
+import os
 from dotenv import dotenv_values
 
 env = dotenv_values('.env')
@@ -14,7 +15,13 @@ class Config(object):
 
 
 class ProductionConfig(Config):
-    pass
+    DEBUG = False
+    TESTING = False
+    API_SECRET_KEY = os.environ.get('API_SECRET_KEY')
+    SECRET_KEY = os.environ.get('SECRET_KEY')
+    SQLALCHEMY_TRACK_MODIFICATIONS = True
+    SQLALCHEMY_DATABASE_URI = os.environ.get('SQLALCHEMY_DATABASE_URI')
+    PORT = 8000
 
 
 class DevelopmentConfig(Config):
